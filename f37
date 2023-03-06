@@ -1,0 +1,1 @@
+const ratings = watchList.map(e => ({title: e.Title, rating: e.imdbRating}));
