@@ -1,0 +1,25 @@
+function addTogether() {
+  if (arguments.length < 2){    
+    let x = arguments[0];    
+    if (typeof x !== "number"){
+      return undefined;
+    } else {      
+      return function (y){        
+        if (typeof y !== "number"){
+          return undefined;
+        } else {
+          return x + y;
+        }
+      }
+    }
+  }   
+  if (arguments.length = 2){    
+    if (typeof arguments[0] !== "number" || typeof arguments[1] !== "number"){
+      return undefined;
+    } else {      
+      return arguments[0] + arguments[1];
+    }
+  }
+}
+
+addTogether(2,3);
